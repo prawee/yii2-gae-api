@@ -3,13 +3,16 @@
  * @Author: Prawee Wongsa <prawee@integra8t.com>
  * @Date: 10/19/2017 AD 2:51 PM
  */
-define('YII_DEBUG', true);
-define('YII_ENV', 'dev');
 
 /*
  * Load vendor and dependencies
  */
 require(__DIR__.'/../vendor/autoload.php');
+
+/**
+ * Load environment variable
+ */
+require(__DIR__ . '/../config/env.php');
 
 /**
  * Load Yii class
