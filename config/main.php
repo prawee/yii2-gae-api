@@ -3,6 +3,8 @@
  * @Author: Prawee Wongsa <prawee@integra8t.com>
  * @Date: 10/19/2017 AD 2:59 PM
  */
+$db = require(__DIR__.'/db.php');
+
 return [
     'id' => 'i8-api-gae',
     'basePath' => dirname(__DIR__),
@@ -11,13 +13,7 @@ return [
         '@i8' => dirname(__DIR__),
     ],
     'components' => [
-        'db' => [
-            'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=127.0.0.1;dbname=<dbname>',
-            'username' => 'root',
-            'password' => '',
-            'charset' => 'utf8'
-        ],
+        'db' => $db,
         'user' => [
             'identityClass' => 'i8\models\Auth',
             'enableAutoLogin' => true
