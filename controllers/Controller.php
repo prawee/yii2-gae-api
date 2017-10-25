@@ -5,7 +5,9 @@
  */
 namespace i8\controllers;
 
-class Controller extends \yii\rest\Controller
+use yii\rest\ActiveController;
+
+class Controller extends ActiveController
 {
     public $layout = false;
 }

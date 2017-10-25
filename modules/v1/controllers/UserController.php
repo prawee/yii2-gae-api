@@ -5,9 +5,9 @@
  */
 namespace i8\modules\v1\controllers;
 
-use yii\rest\ActiveController;
+use i8\controllers\Controller;
 
-class UserController extends ActiveController
+class UserController extends Controller
 {
     public $modelClass = 'i8\models\User';
 
