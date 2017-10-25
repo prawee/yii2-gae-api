@@ -5,10 +5,10 @@
  */
 return [
     'id' => 'i8-api-gae',
-    'basePath' => __DIR__,
+    'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'i8\controllers',
     'aliases' => [
-        '@i8' => __DIR__,
+        '@i8' => dirname(__DIR__),
     ],
     'components' => [
         'db' => [

@@ -19,7 +19,7 @@ require(__DIR__.'/../vendor/yiisoft/yii2/Yii.php');
 /**
  * Load configure
  */
-$config = require __DIR__.'/../config.php';
+$config = require __DIR__.'/../config/main.php';
 
 /**
  * New Instance
