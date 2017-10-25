@@ -2,9 +2,9 @@
 Create RESTful for deploy on Google App Engine with Yii2
 
 ### Support
-1. JSON
-2. Version
-3. .env
+1. reponse both xml and json format
+2. make versioning
+3. using .env file between server and local
 
 ### Installalion
 ```bash
