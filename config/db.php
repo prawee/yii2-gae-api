@@ -5,8 +5,8 @@
  */
 return [
     'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=127.0.0.1;dbname=<dbname>',
-    'username' => 'root',
-    'password' => '',
+    'dsn' => getenv('MYSQL_DSN'),
+    'username' => getenv('MYSQL_USERNAME'),
+    'password' => getenv('MYSQL_PASSWORD'),
     'charset' => 'utf8'
 ];
