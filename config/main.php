@@ -12,6 +12,11 @@ return [
     'aliases' => [
         '@i8' => dirname(__DIR__),
     ],
+    'modules' => [
+        'v1' => [
+            'class' => 'i8\modules\v1\ApiModule'
+        ]
+    ],
     'components' => [
         'db' => $db,
         'user' => [
@@ -27,7 +32,7 @@ return [
                     'class' => 'yii\rest\UrlRule',
                     'controller' => [
                         'site' => 'site',
-                        'user'
+                        'v1/user'
                     ]
                 ]
             ]
