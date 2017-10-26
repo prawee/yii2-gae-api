@@ -3,3 +3,4 @@ composer.lock
 .idea
 .env
 app.yaml
+config/main-local.php
