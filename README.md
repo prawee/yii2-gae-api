@@ -13,6 +13,14 @@ $ cd yii2-gae-api
 $ composer install
 ```
 
+### Configuration
+```bash
+$ cp .env.dist .env
+# update environment variable for your local
+$ cp app.yaml.dist app.yaml
+# update environment variable for your GAE
+```
+
 ### Running
 localhost
 ```bash
