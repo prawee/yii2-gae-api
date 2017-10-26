@@ -14,7 +14,10 @@ $config = [
         '@bower' => dirname(__DIR__).'/vendor/bower-asset'
     ],
     'components' => [
-        'db' => $db
+        'db' => $db,
+        'authManager' => [
+            'class' => 'yii\rbac\DbManager'
+        ]
     ]
 ];
 
