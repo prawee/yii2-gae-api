@@ -18,6 +18,9 @@
         "yiisoft/yii2": "^2.0",
         "vlucas/phpdotenv": "^2.4"
     },
+    "require-dev": {
+        "yiisoft/yii2-gii": "^2.0"
+    },
     "repositories": [
         {
             "type": "composer",
