@@ -1,6 +1,6 @@
 <?php
 /**
- * @Author: Prawee Wongsa <prawee@integra8t.com>
+ * @Author: Prawee Wongsa <prawee.w@integra8t.com>
  * @Date: 10/19/2017 AD 2:59 PM
  */
 $db = require(__DIR__.'/db.php');
