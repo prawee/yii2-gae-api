@@ -1,0 +1,16 @@
+runtime: php55
+api_version: 1
+
+service: api
+
+handlers:
+- url: /.*
+  script: web/index.php
+
+skip_files:
+- .env
+
+env_variables:
+  # framework
+  YII_DEBUG: false
+  YII_ENV: prod

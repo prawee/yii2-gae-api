@@ -1,8 +1,0 @@
-runtime: php55
-api_version: 1
-
-service: api
-
-handlers:
-- url: /.*
-  script: web/index.php
