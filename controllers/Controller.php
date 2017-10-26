@@ -10,4 +10,11 @@ use yii\rest\ActiveController;
 class Controller extends ActiveController
 {
     public $layout = false;
+
+    public $serializer = [
+        'class' => 'yii\rest\Serializer',
+        'collectionEnvelope' => 'items',
+        'linksEnvelope' => 'links',
+        'metaEnvelope' => 'meta'
+    ];
 }
