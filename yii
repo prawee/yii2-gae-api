@@ -1,0 +1,33 @@
+#!/usr/bin/env php
+<?php
+/**
+ * @Author: Prawee Wongsa <prawee.w@integra8t.com>
+ * @Date: 10/22/2017 AD 12:42 AM
+ */
+
+/*
+ * Load vendor and dependencies
+ */
+require(__DIR__.'/vendor/autoload.php');
+
+/**
+ * Load environment variable
+ */
+require(__DIR__.'/config/env.php');
+
+/**
+ * Load Yii class
+ */
+require(__DIR__.'/vendor/yiisoft/yii2/Yii.php');
+
+/**
+ * Load configure
+ */
+$config = require __DIR__ . '/config/console.php';
+
+/**
+ * New Instance
+ */
+$application = new \yii\console\Application($config);
+$exitCode = $application->run();
+exit($exitCode);
