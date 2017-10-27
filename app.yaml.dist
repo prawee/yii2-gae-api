@@ -17,5 +17,5 @@ env_variables:
 
   # database
   MYSQL_DSN: mysql:unix_socket=/cloudsql/<instance-connection-name>;dbname=<dbname>
-  MYSQL_USER: <username>
+  MYSQL_USERNAME: <username>
   MYSQL_PASSWORD: <password>
