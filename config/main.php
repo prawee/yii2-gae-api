@@ -51,6 +51,10 @@ return [
                     'encodeOptions' => JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE
                 ]
             ]
+        ],
+        'cache' => [
+            'class' => 'yii\caching\MemCache',
+            'useMemcached' => true
         ]
     ]
 ];
