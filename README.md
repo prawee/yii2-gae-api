@@ -5,6 +5,7 @@ Create RESTful for deploy on Google App Engine with Yii2
 1. reponse both xml and json format
 2. make versioning
 3. using .env file between server and local
+4. using memcache via  appengine
 
 ### Installalion
 ```bash
