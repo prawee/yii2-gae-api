@@ -21,7 +21,8 @@ return [
         'db' => $db,
         'user' => [
             'identityClass' => 'i8\models\Auth',
-            'enableAutoLogin' => true
+            'enableSession' => false,
+            'loginUrl' => null
         ],
         'urlManager' => [
             'enablePrettyUrl' => true,
