@@ -5,6 +5,7 @@
  */
 namespace i8\controllers;
 
+use yii\filters\auth\HttpBearerAuth;
 use yii\rest\ActiveController;
 
 class Controller extends ActiveController
@@ -17,4 +18,13 @@ class Controller extends ActiveController
         'linksEnvelope' => 'links',
         'metaEnvelope' => 'meta'
     ];
+
+    public function behaviors()
+    {
+        $behaviors = parent::behaviors();
+        $behaviors['authenticator'] = [
+            'class' => HttpBearerAuth::className()
+        ];
+        return $behaviors;
+    }
 }
