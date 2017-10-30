@@ -10,22 +10,4 @@ use i8\controllers\Controller;
 class UserController extends Controller
 {
     public $modelClass = 'i8\models\User';
-
-    public function actions()
-    {
-        $actions = parent::actions();
-        unset(
-            $actions['index'],
-            $actions['view'],
-            $actions['create'],
-            $actions['update'],
-            $actions['delete']
-        );
-        return $actions;
-    }
-
-    public function actionIndex()
-    {
-        return ['message' => 'list all users'];
-    }
 }
