@@ -16,10 +16,12 @@ $ composer install
 
 ### Configuration
 ```bash
-$ cp .env.dist .env
 # update environment variable for your local
-$ cp app.yaml.dist app.yaml
+$ cp .env.dist .env
 # update environment variable for your GAE
+$ cp app.yaml.dist app.yaml
+# update configure on your local
+$ cp config/main-local.php.dist config/main-local.php
 ```
 
 ### Running
