@@ -4,6 +4,7 @@
  * @Date: 10/19/2017 AD 2:59 PM
  */
 $db = require(__DIR__.'/db.php');
+$params = require(__DIR__.'/params.php');
 
 return [
     'id' => 'i8-api-gae',
@@ -57,5 +58,6 @@ return [
             'class' => 'yii\caching\MemCache',
             'useMemcached' => true
         ]
-    ]
+    ],
+    'params' => $params
 ];
