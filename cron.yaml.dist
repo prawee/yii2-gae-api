@@ -1,0 +1,4 @@
+cron:
+- description: "description this script"
+  url: <url-after-endpoint>
+  schedule: every 10 minutes
