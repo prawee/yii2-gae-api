@@ -4,3 +4,4 @@ composer.lock
 .env
 app.yaml
 config/main-local.php
+cron.yaml
