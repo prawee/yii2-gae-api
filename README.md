@@ -1,5 +1,5 @@
 # yii2-gae-api
-Create RESTful for deploy on Google App Engine with Yii2
+Create RESTful for deploy on Google App Engine <b>(Standard Environment)</b> with Yii2
 
 ### Support
 1. reponse both xml and json format
@@ -15,12 +15,18 @@ $ composer install
 ```
 
 ### Configuration
+Update environment variable for your local
 ```bash
-# update environment variable for your local
 $ cp .env.dist .env
-# update environment variable for your GAE
+```
+
+Update environment variable for your GAE
+```bash
 $ cp app.yaml.dist app.yaml
-# update configure on your local
+$ cp cron.yaml.dist cron.yaml
+```
+Update configure on your local
+```bash
 $ cp config/main-local.php.dist config/main-local.php
 ```
 
