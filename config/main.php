@@ -18,6 +18,7 @@ return [
             'class' => 'i8\modules\v1\ApiModule'
         ]
     ],
+    'bootstrap' => ['log'],
     'components' => [
         'db' => $db,
         'user' => [
@@ -53,6 +54,15 @@ return [
                     'encodeOptions' => JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE
                 ]
             ]
+        ],
+        'log' => [
+            'traceLevel' => YII_DEBUG ? 3 : 0,
+            'targets' => [
+                [
+                    'class' => 'yii\log\SyslogTarget',
+                    'levels' => ['error', 'warning'],
+                ],
+            ],
         ],
         'cache' => [
             'class' => 'yii\caching\MemCache',
