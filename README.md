@@ -9,36 +9,36 @@ Create RESTful for deploy on Google App Engine <b>(Standard Environment)</b> wit
 
 ### Installalion
 ```bash
-$ git clone https://github.com/prawee/yii2-gae-api
-$ cd yii2-gae-api
-$ composer install
+git clone https://github.com/prawee/yii2-gae-api
+cd yii2-gae-api
+composer install
 ```
 
 ### Configuration
 Update environment variable for your local
 ```bash
-$ cp .env.dist .env
+cp .env.dist .env
 ```
 
 Update environment variable for your GAE
 ```bash
-$ cp app.yaml.dist app.yaml
-$ cp cron.yaml.dist cron.yaml
+cp app.yaml.dist app.yaml
+cp cron.yaml.dist cron.yaml
 ```
 Update configure on your local
 ```bash
-$ cp config/main-local.php.dist config/main-local.php
+cp config/main-local.php.dist config/main-local.php
 ```
 
 ### Running
 localhost
 ```bash
-$ php -S localhost:8080 -t web
+php -S localhost:8080 -t web
 ```
 
 localhost with google app engine
 ```bash
-$ dev_appserver.py app.yaml
+dev_appserver.py app.yaml
 ```
 
 ### Look
