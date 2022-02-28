@@ -4,6 +4,9 @@ api_version: 1
 service: api
 
 handlers:
+- url: /requirements.php
+  script: web/requirements.php
+
 - url: /.*
   script: web/index.php
 
