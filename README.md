@@ -44,12 +44,14 @@ dev_appserver.py app.yaml
 ### Look
 ```bash
 # local
+GET localhost:8080/requirements.php
 GET localhost:8080/site
 GET localhost:8080/v1/users
 ```
 
 ```bash
 # gae
+GET https://<project-id>.appspot.com/requirements.php
 GET https://<project-id>.appspot.com/site
 GET https://<project-id>.appspot.com/v1/users
 ```
