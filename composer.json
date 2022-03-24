@@ -1,7 +1,7 @@
 {
     "name": "prawee/yii2-gae-api",
     "version": "1.0",
-    "description": "Create RESTful for deploy on Google App Engine with Yii2",
+    "description": "Create RESTFul for deploy on Google App Engine with Yii2",
     "type": "project",
     "keywords": [
       "GAE", "Yii2", "RESTful", "API", "google app engine"
