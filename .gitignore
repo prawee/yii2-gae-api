@@ -5,3 +5,4 @@ composer.lock
 app.yaml
 config/main-local.php
 cron.yaml
+.DS_Store
