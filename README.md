@@ -33,7 +33,7 @@ cp config/main-local.php.dist config/main-local.php
 ### Running
 localhost
 ```bash
-php -S localhost:8080 -t web
+php -S localhost:8080 -t public
 ```
 
 localhost with google app engine
