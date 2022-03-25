@@ -1,13 +1,13 @@
-# yii2-gae-api
-Create RESTful for deploy on Google App Engine <b>(Standard Environment)</b> with Yii2
+# Yii2 API with Google App Engine
+Create RESTFul for deploy on Google App Engine <b>(Standard Environment)</b> with Yii2
 
 ### Support
-1. reponse both xml and json format
+1. response both xml and json format
 2. make versioning
 3. using .env file between server and local
-4. using memcache via  appengine
+4. using memcache via  app-engine
 
-### Installalion
+### Installation
 ```bash
 git clone https://github.com/prawee/yii2-gae-api
 cd yii2-gae-api
